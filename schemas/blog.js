@@ -100,6 +100,9 @@ export default {
           },
         },
         {
+          type: "youtube",
+        },
+        {
           type: "image",
 
           fields: [

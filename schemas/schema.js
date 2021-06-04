@@ -9,6 +9,7 @@ import contact from "./contact";
 import about from "./about";
 import terms from "./terms";
 import privacy from "./privacy";
+import youtube from "./youtube";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -16,5 +17,13 @@ export default createSchema({
   name: "default",
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([author, blog, contact, about, terms, privacy]),
+  types: schemaTypes.concat([
+    author,
+    blog,
+    contact,
+    about,
+    youtube,
+    terms,
+    privacy,
+  ]),
 });
