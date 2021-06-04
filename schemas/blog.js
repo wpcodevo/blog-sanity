@@ -154,6 +154,10 @@ export default {
       name: "slug",
       type: "slug",
       title: "Slug",
+      options: {
+        source: "title",
+        maxLength: 96,
+      },
       validation: (Rule) => {
         return Rule.required();
       },
