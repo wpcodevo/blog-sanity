@@ -28,9 +28,12 @@ export default {
       type: "image",
       fields: [
         {
-          type: "text",
+          type: "string",
           name: "alt",
           title: "Alt",
+          options: {
+            isHighlighted: true,
+          },
         },
       ],
     },
@@ -126,7 +129,7 @@ export default {
               },
             },
             {
-              type: "text",
+              type: "string",
               name: "alt",
               title: "Alt",
               options: {
