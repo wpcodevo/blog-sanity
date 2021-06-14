@@ -14,9 +14,12 @@ export default {
       title: "Avatar",
       fields: [
         {
-          type: "text",
+          type: "string",
           name: "alt",
           title: "Alt",
+          options: {
+            isHighlighted: true,
+          },
         },
       ],
       options: {
