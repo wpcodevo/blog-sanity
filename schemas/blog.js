@@ -170,13 +170,5 @@ export default {
         return Rule.required();
       },
     },
-    {
-      name: "shares",
-      type: "number",
-      title: "Number of Shares",
-    },
   ],
-  initialValue: {
-    shares: 0,
-  },
 };
