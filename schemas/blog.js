@@ -170,5 +170,15 @@ export default {
         return Rule.required();
       },
     },
+    {
+      name: "download",
+      type: "boolean",
+      title: "Download",
+    },
+    {
+      name: "downloadLink",
+      type: "string",
+      title: "Download Link",
+    },
   ],
 };
