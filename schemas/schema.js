@@ -10,6 +10,9 @@ import about from "./about";
 import terms from "./terms";
 import privacy from "./privacy";
 import youtube from "./youtube";
+import category from "./category";
+import comment from "./comment";
+import blockContent from "./blockContent";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -25,5 +28,8 @@ export default createSchema({
     youtube,
     terms,
     privacy,
+    category,
+    comment,
+    blockContent,
   ]),
 });

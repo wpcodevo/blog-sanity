@@ -16,7 +16,8 @@
     "@sanity/color-input",
     "@sanity/code-input",
     "@sanity/production-preview",
-    "autocomplete-tags"
+    "autocomplete-tags",
+    "table"
   ],
   "env": {
     "development": {

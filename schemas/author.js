@@ -26,5 +26,16 @@ export default {
         hotspot: true,
       },
     },
+    {
+      name: "bio",
+      title: "Bio",
+      type: "blockContent",
+    },
   ],
+  preview: {
+    select: {
+      title: "name",
+      media: "avatar",
+    },
+  },
 };

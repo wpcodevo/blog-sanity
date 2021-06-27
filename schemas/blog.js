@@ -38,22 +38,15 @@ export default {
       ],
     },
     {
+      name: "categories",
+      title: "Categories",
+      type: "array",
+      of: [{ type: "reference", to: { type: "category" } }],
+    },
+    {
       title: "File",
       name: "file",
       type: "file",
-      fields: [
-        {
-          name: "description",
-          type: "string",
-          title: "Description",
-        },
-        {
-          name: "author",
-          type: "reference",
-          title: "Author",
-          to: { type: "author" },
-        },
-      ],
     },
     {
       name: "tags",
@@ -61,94 +54,9 @@ export default {
       type: "tags",
     },
     {
-      name: "content",
       title: "Content",
-      type: "array",
-      of: [
-        {
-          type: "block",
-          marks: {
-            annotations: [
-              {
-                title: "Color",
-                name: "color",
-                type: "color",
-              },
-              {
-                name: "link",
-                type: "object",
-                title: "External link",
-                fields: [
-                  {
-                    name: "href",
-                    type: "url",
-                    title: "URL",
-                  },
-                  {
-                    title: "Open in new tab",
-                    name: "blank",
-                    type: "boolean",
-                  },
-                ],
-              },
-              {
-                name: "internalLink",
-                type: "object",
-                title: "Internal link",
-                fields: [
-                  {
-                    name: "reference",
-                    type: "reference",
-                    title: "Reference",
-                    to: [{ type: "blog" }],
-                  },
-                ],
-              },
-            ],
-          },
-        },
-        {
-          type: "youtube",
-        },
-        {
-          type: "image",
-
-          fields: [
-            {
-              name: "position",
-              title: "Position",
-              type: "string",
-              options: {
-                list: [
-                  { title: "Left", value: "left" },
-                  { title: "Right", value: "right" },
-                  { title: "Center", value: "center" },
-                ],
-                layout: "radio",
-                isHighlighted: true,
-              },
-            },
-            {
-              type: "string",
-              name: "alt",
-              title: "Alt",
-              options: {
-                isHighlighted: true,
-              },
-            },
-          ],
-          options: {
-            hotspot: true,
-          },
-        },
-
-        {
-          type: "code",
-          options: {
-            withFilename: true,
-          },
-        },
-      ],
+      name: "content",
+      type: "blockContent",
     },
     {
       name: "date",
@@ -181,4 +89,17 @@ export default {
       title: "Download Link",
     },
   ],
+  preview: {
+    select: {
+      title: "title",
+      author: "author.name",
+      media: "coverImage",
+    },
+    prepare(selection) {
+      const { author } = selection;
+      return Object.assign({}, selection, {
+        subtitle: author && `by ${author}`,
+      });
+    },
+  },
 };
