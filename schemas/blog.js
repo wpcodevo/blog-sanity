@@ -38,6 +38,21 @@ export default {
       ],
     },
     {
+      name: "smallImage",
+      title: "Small Image",
+      type: "image",
+      fields: [
+        {
+          type: "string",
+          name: "alt",
+          title: "Alt",
+          options: {
+            isHighlighted: true,
+          },
+        },
+      ],
+    },
+    {
       name: "categories",
       title: "Categories",
       type: "array",
