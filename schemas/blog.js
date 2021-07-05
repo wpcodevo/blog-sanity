@@ -14,6 +14,12 @@ export default {
       title: "Subtitle",
     },
     {
+      name: "shorttitle",
+      type: "string",
+      title: "Short Title",
+    },
+
+    {
       name: "author",
       type: "reference",
       title: "Author",
