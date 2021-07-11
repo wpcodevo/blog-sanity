@@ -13,11 +13,6 @@ export default {
             type: "color",
           },
           {
-            title: "Ads",
-            name: "ads",
-            type: "color",
-          },
-          {
             name: "link",
             type: "object",
             title: "External link",
@@ -52,6 +47,10 @@ export default {
     },
     {
       type: "youtube",
+    },
+    {
+      type: "color",
+      name: "ads",
     },
     {
       type: "image",
