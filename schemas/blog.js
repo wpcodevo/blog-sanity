@@ -7,11 +7,17 @@ export default {
       type: "string",
       name: "title",
       title: "Title",
+      validation: (Rule) => {
+        return Rule.required();
+      },
     },
     {
       name: "subtitle",
       type: "string",
       title: "Subtitle",
+      validation: (Rule) => {
+        return Rule.required();
+      },
     },
     {
       name: "shorttitle",
