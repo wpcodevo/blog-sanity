@@ -51,6 +51,12 @@ export default {
     {
       type: "color",
       name: "ads",
+      title: "Google Ads",
+    },
+    {
+      type: "color",
+      name: "tablecontent",
+      title: "Table of Content",
     },
     {
       type: "image",
