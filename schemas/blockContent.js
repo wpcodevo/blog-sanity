@@ -6,6 +6,18 @@ export default {
     {
       type: "block",
       marks: {
+        decorators: [
+          {
+            title: "Heading",
+            value: "heading",
+            blockEditor: {
+              icon: () => "H",
+            },
+          },
+          { title: "Strong", value: "strong" },
+          { title: "Emphasis", value: "em" },
+          { title: "Code", value: "code" },
+        ],
         annotations: [
           {
             title: "Color",
