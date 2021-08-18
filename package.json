@@ -32,5 +32,7 @@
     "sanity-plugin-autocomplete-tags": "^1.0.1",
     "sanity-plugin-table": "^2.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@sanity/cli": "^2.15.0"
+  }
 }
