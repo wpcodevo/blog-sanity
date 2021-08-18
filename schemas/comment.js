@@ -8,6 +8,12 @@ export default {
       type: "string",
     },
     {
+      title: "Approved",
+      name: "approved",
+      type: "boolean",
+      initialValue: true,
+    },
+    {
       name: "email",
       type: "string",
     },
