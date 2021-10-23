@@ -17,7 +17,8 @@
     "@sanity/code-input",
     "@sanity/production-preview",
     "autocomplete-tags",
-    "table"
+    "table",
+    "seo-pane"
   ],
   "env": {
     "development": {

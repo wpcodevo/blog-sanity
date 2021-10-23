@@ -2,6 +2,9 @@ export default {
   name: "comment",
   type: "document",
   title: "Comment",
+  initialValue: {
+    approved: true,
+  },
   fields: [
     {
       name: "name",
@@ -11,7 +14,6 @@ export default {
       title: "Approved",
       name: "approved",
       type: "boolean",
-      initialValue: true,
     },
     {
       name: "email",
